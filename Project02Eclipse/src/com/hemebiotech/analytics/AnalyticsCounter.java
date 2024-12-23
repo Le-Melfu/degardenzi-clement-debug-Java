@@ -15,16 +15,14 @@ public class AnalyticsCounter {
 		String line = reader.readLine();
 
 		int i = 0;
-		int headCount = 0;
 
 		while (line != null) {
 			i++;
 			System.out.println("symptom from file: " + line);
 			if (line.equals("headache")) {
-				headCount++;
-				System.out.println("number of headaches: " + headCount);
+				headacheCount++;
 			}
-			else if (line.equals("rush")) {
+			else if (line.equals("rash")) {
 				rashCount++;
 			}
 			else if (line.contains("pupils")) {

@@ -39,9 +39,10 @@ public class AnalyticsCounter {
         writer.writeSymptoms(symptoms);
     }
 
+    /*
+    * Method to Sort the symptoms alphabetically
+    * */
     public Map<String, Integer> sortSymptoms(Map<String, Integer> symptoms) {
-        Map<String, Integer> sortedSymptoms = new TreeMap<>(symptoms);
-        System.out.println(sortedSymptoms);
-        return sortedSymptoms;
+        return new TreeMap<>(symptoms);
     }
 }

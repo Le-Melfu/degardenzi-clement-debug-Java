@@ -7,6 +7,10 @@ import java.util.Map;
 public class WriteSymptomDataToFile implements ISymptomWriter {
     private final String filepath;
 
+    /**
+     *
+     * @param filepath a full or partial path to file to write symptoms(strings) and count(integer) in it, one per line
+     */
     public WriteSymptomDataToFile(String filepath) {
         this.filepath = filepath;
     }

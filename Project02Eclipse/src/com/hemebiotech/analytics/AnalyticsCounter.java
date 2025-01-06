@@ -33,16 +33,17 @@ public class AnalyticsCounter {
     }
 
     /**
+     * Method to Sort the symptoms alphabetically
+     */
+    public Map<String, Integer> sortSymptoms(Map<String, Integer> symptoms) {
+        return new TreeMap<>(symptoms);
+    }
+
+    /**
      * Method to write the count result to a file
      */
     public void writeSymptoms(Map<String, Integer> symptoms) {
         writer.writeSymptoms(symptoms);
     }
 
-    /**
-     * Method to Sort the symptoms alphabetically
-     */
-    public Map<String, Integer> sortSymptoms(Map<String, Integer> symptoms) {
-        return new TreeMap<>(symptoms);
-    }
 }
